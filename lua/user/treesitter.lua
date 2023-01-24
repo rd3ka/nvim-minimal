@@ -11,11 +11,10 @@ end
 configs.setup({
     ensure_installed = {"lua","java","cpp","html","css"},
     ignore_install = {""},
-    sync_install = false;
+    sync_install = true;
 
     highlight = {
                 enable = true,
-                disable = {""},
             },
             autopairs = {
                 enable = true,

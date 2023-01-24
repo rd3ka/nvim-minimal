@@ -40,8 +40,13 @@ return packer.startup(function(use)
     --editor experience
     use "windwp/nvim-autopairs"
     use "nvim-treesitter/nvim-treesitter" --treesitter 
-    use "RRethy/vim-illuminate"
-    use "lewis6991/impatient.nvim"
-    use "akinsho/toggleterm.nvim"
-    use { "nvim-tree/nvim-tree.lua", requires = {"nvim-tree/nvim-web-devicons"}}
+    use "RRethy/vim-illuminate" --highlight the same word
+    use "lewis6991/impatient.nvim" --lazy load
+    use "akinsho/toggleterm.nvim" --get a floating terminal
+    use { "nvim-tree/nvim-tree.lua", 
+        requires = {
+            "nvim-tree/nvim-web-devicons"
+        }
+    }                              --file explorer
+    use "nvim-lualine/lualine.nvim" --fancier statusline
 end)

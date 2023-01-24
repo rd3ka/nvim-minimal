@@ -13,7 +13,6 @@ illuminate.configure {
         "lsp",
         "regex",
     },
-
     delay = 100,
     filetypes_denylist = {
         "dirvish",
